@@ -21,6 +21,4 @@ It consists of two parts:
 1. Clone the repository.
 2. Ensure the dataset (`data/full_dataset_sentiment_directive_responses.csv`) is in the `/data/` folder.
 3. Open the notebooks and run all cells.
-
-## Contact
-GitHub: [nickreinert99](https://github.com/nickreinert99)
+   
