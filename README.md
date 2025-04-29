@@ -1,41 +1,26 @@
-# Therapist Sentiment Analysis
+# Therapist Sentiment Analysis and Topic Modeling
 
 ## Overview
-This project analyzes therapist responses from an online mental health platform to classify communication tone using sentiment analysis and machine learning models. The goal is to predict whether therapist messages exhibit directive, advisory, or affirmative tones based on textual and linguistic features.
+This project analyzes therapist responses from an online mental health platform.  
+It consists of two parts:
+- **Sentiment and Tone Classification** using machine learning models.
+- **Topic Modeling** to uncover common themes in therapist communication.
 
-We first explore the relationship between emotional sentiment scores (VADER compound) and directive communication. We then build and evaluate machine learning models to predict sentiment categories (Positive, Neutral, Negative) from therapist responses.
+## Files
+- `sentiment_analysis_directive_responses_project.ipynb`: Sentiment analysis and tone classification.
+- `topic_modeling_therapist_responses.ipynb`: Topic modeling using Latent Dirichlet Allocation (LDA).
+- `/data/full_dataset_sentiment_directive_responses.csv`: Dataset used for analysis.
 
 ## Methods
-- **Text Cleaning and Preprocessing:** Stopword removal, tokenization, lemmatization.
-- **Feature Engineering:** 
-  - Sentiment labeling (Positive, Negative, Neutral) using VADER and Opinion Lexicon.
-  - Tone detection (Directive, Advisory, Affirmative) via keyword matching.
-- **Text Vectorization:** 
-  - TF-IDF (Term Frequency–Inverse Document Frequency)
-  - Bag of Words (BoW)
-- **Machine Learning Models:**
-  - Decision Tree Classifier (TF-IDF and enhanced features)
-  - Logistic Regression (TF-IDF and enhanced features)
-  - Naive Bayes Classifier (BoW and enhanced features)
-
-## Project Structure
-- `sentiment_analysis_directive_responses_project.ipynb` — Main notebook containing all code, models, evaluation, and visualizations.
-- `README.md` — Project overview and instructions.
-
-## Results
-- Combining textual features with engineered tone indicators improved model performance across all classifiers.
-- Decision Trees and Logistic Regression models showed strong performance when both TF-IDF features and directive/advisory/affirmative indicators were included.
-- ROC curve analysis helped visualize model performance across sentiment categories.
+- Preprocessing: Tokenization, lemmatization, stopword removal.
+- Feature Engineering: Sentiment labeling, tone detection.
+- Machine Learning: Decision Tree, Logistic Regression, Naive Bayes.
+- Topic Modeling: LDA with Gensim.
 
 ## How to Run
 1. Clone the repository.
-2. Open the `sentiment_analysis_directive_responses_project.ipynb` notebook.
-3. Run all cells (data is assumed to be preloaded — otherwise paths need to be adjusted).
-
-## Future Work
-- Incorporating deep learning models (e.g., BERT embeddings) for more context-aware analysis.
-- Expanding the keyword sets for better tone detection.
-- Testing models on larger, more diverse datasets.
+2. Ensure the dataset (`data/full_dataset_sentiment_directive_responses.csv`) is in the `/data/` folder.
+3. Open the notebooks and run all cells.
 
 ## Contact
-For any questions, feel free to reach out via GitHub at [nickreinert99](https://github.com/nickreinert99).
+GitHub: [nickreinert99](https://github.com/nickreinert99)
