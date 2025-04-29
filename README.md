@@ -16,9 +16,3 @@ It consists of two parts:
 - Feature Engineering: Sentiment labeling, tone detection.
 - Machine Learning: Decision Tree, Logistic Regression, Naive Bayes.
 - Topic Modeling: LDA with Gensim.
-
-## How to Run
-1. Clone the repository.
-2. Ensure the dataset (`data/full_dataset_sentiment_directive_responses.csv`) is in the `/data/` folder.
-3. Open the notebooks and run all cells.
-   
